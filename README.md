@@ -18,11 +18,7 @@ More detailed information is below.
 
     This is a cross-reference table mapping customer ids to email addresses.
 
-- The files are hosted on an SFTP server:
-
-  - Hostname: `sftp.company.com`
-  - Username: `miuser`
-  - Password: `mipassword`
+- The files are hosted on an SFTP server. Our recruitement team will provide login details.
 
 - The data files are PGP encrypted using GnuPG 2.3.4. The private key needed to decrypt these files is also provided on the SFTP server with filename `pgpkey`.
 
