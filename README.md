@@ -1,4 +1,4 @@
-# Data Engineer, Client Solutions - Hiring Challenge
+# Data Integration Engineer, Client Solutions - Hiring Challenge
 
 In this test, you’ll need to retrieve a series of data files, decrypt them, then perform some basic aggregations on them using python and pandas. The data files contain mocked data supporting a fictitious company’s email program.
 
