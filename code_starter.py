@@ -27,7 +27,8 @@ def objective_one():
     Objective One:
     Return the average revenue per transaction using all data in transaction log.
     """
-    result = 0
+    df = get_transaction_log()
+    result = df.groupby('customer_id')['revenue'].mean()
 
     return result
 
@@ -39,8 +40,11 @@ def objective_two():
     Return the total revenue from customers who are opted-in to email and are
     subscribed to the loyalty program.
     """
-    result = 0
-
+    dft = get_transaction_log()
+    dfc = get_customers()
+    dfe = get_email_to_customer_cross_reference()
+    
+    result =  groupby(query(pd.merge(pd.merge(dft, dfe, how='inner', on = 'customer_id'),dfc, how='inner', on = 'email_address')loyalty_status=='true'&&opt_in_status=='true')'customer_id')['revenue'])sum()
     return result
 
 
